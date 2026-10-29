@@ -1,0 +1,60 @@
+{
+  "full_participants": 453,
+  "full_assigned_counts": {
+    "0.0": 235,
+    "1.0": 218
+  },
+  "main_participants": 359,
+  "main_assigned_counts": {
+    "0.0": 187,
+    "1.0": 172
+  },
+  "exact_time_participants": 94,
+  "main_pre_time_observed": 347,
+  "main_post_time_observed": 356,
+  "main_pre_grade_observed": 352,
+  "main_post_grade_observed": 353,
+  "main_complete_time_pair": 346,
+  "main_complete_grade_pair": 352,
+  "main_complete_post_time_grade": 352,
+  "main_complete_post_assigned_counts": {
+    "0.0": 186,
+    "1.0": 166
+  },
+  "main_missing_post_assigned_counts": {
+    "0.0": 1,
+    "1.0": 6
+  },
+  "main_complete_all_four": 341,
+  "main_reported_zero_post_time": 1,
+  "excluded_low_reliability_graders": 23,
+  "grade_cleaning_flow": [
+    {
+      "step": "Exclude author test grader",
+      "remaining_rows": 4092,
+      "removed_rows": 0
+    },
+    {
+      "step": "Exclude retry-task grades",
+      "remaining_rows": 3895,
+      "removed_rows": 197
+    },
+    {
+      "step": "Exclude evaluators who previously completed writing task",
+      "remaining_rows": 3646,
+      "removed_rows": 249
+    },
+    {
+      "step": "Exclude missing overall ratings",
+      "remaining_rows": 3219,
+      "removed_rows": 427
+    },
+    {
+      "step": "Exclude low-reliability evaluators",
+      "remaining_rows": 2771,
+      "removed_rows": 448
+    }
+  ],
+  "joint_outcome_computed": false,
+  "treatment_effect_models_estimated": false
+}

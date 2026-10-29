@@ -1,0 +1,8 @@
+step,rows,unique_participants,removed
+Raw survey rows,786,732,
+Exclude unfinished surveys,539,521,247.0
+Exclude explicit nonconsent,523,505,16.0
+Retain earliest response per participant,505,505,18.0
+Authors manual exclusion flags,499,499,6.0
+Authors submission-quality exclusions,457,457,42.0
+Exclude participants who graded before writing,453,453,4.0

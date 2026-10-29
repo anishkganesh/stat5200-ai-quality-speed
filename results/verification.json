@@ -1,0 +1,21 @@
+{
+  "participant_records_checked": 453,
+  "exported_fields": [
+    "treatment",
+    "a_first",
+    "occupation",
+    "incentive_arm",
+    "time1",
+    "time2",
+    "overall1",
+    "overall2"
+  ],
+  "matches_original_feasibility_preparation": true,
+  "R_Python_rows_compared": 24,
+  "R_Python_numeric_columns_compared": 10,
+  "R_Python_max_absolute_difference": 4.796163466380676e-14,
+  "all_sample_and_missingness_counts_exact": true,
+  "external_code_executed": false,
+  "joint_outcome_computed": false,
+  "treatment_effect_models_estimated": false
+}

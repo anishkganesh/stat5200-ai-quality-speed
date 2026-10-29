@@ -1,0 +1,48 @@
+{
+  "source_osf_node": "https://osf.io/xd7qw/",
+  "retrieved_date": "2026-10-29",
+  "files": [
+    {
+      "path": "data/raw/fullsurvey.csv",
+      "download_url": "https://osf.io/download/dch8w/",
+      "sha256": "06f430ba9a9194039530721d68ad37f95552977a1ae1868c9228d1ce6334db0f",
+      "bytes": 22753065
+    },
+    {
+      "path": "data/raw/grading_long_complete.csv",
+      "download_url": "https://osf.io/download/hdszk/",
+      "sha256": "92771e43f2116df81a8681d281a94e94dec8ca4a2d0a04ff0a1ecfe3bcdc2779",
+      "bytes": 1369616
+    },
+    {
+      "path": "data/raw/grading_retry.xlsx",
+      "download_url": "https://osf.io/download/3qcfb/",
+      "sha256": "09009bc52b50d76e4585a8072a63115c819dbd21ab5da553c7f5bd01b2898e27",
+      "bytes": 22050
+    },
+    {
+      "path": "data/raw/grading.xlsx",
+      "download_url": "https://osf.io/download/m35kf/",
+      "sha256": "76e66cb815a3e9b7e333ff50f8f49fd661857bc4614fae62fb987d06590edd1e",
+      "bytes": 48551
+    },
+    {
+      "path": "sources/code/2 - clean.do",
+      "download_url": "https://osf.io/download/8e9ca/",
+      "sha256": "961fcf236bcb085be2489601c7517750cbb27a05864f09942f143212697582b7",
+      "bytes": 11134
+    },
+    {
+      "path": "sources/code/4 - main text figures.do",
+      "download_url": "https://osf.io/download/pyucn/",
+      "sha256": "78d5a18ec46f77e4257b2bbebc9b9e086017b6dcd4af218686d0aa834c4bc8b5",
+      "bytes": 34316
+    },
+    {
+      "path": "sources/code/3 - grade cleaning_jul21.do",
+      "download_url": "https://osf.io/download/xvfg5/",
+      "sha256": "b97aba0ac7d6d9758e49537097913036efb20274c1aac0a1de866b6790c13523",
+      "bytes": 8269
+    }
+  ]
+}

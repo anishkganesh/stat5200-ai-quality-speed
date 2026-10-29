@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlength{\emergencystretch}{1em}
+\title{STAT 5200: Project Proposal}
+\author{Anish Ganesh}
+\date{October 29, 2026}
+\input{results/tables/proposal_stats.tex}
+
+\begin{document}
+\maketitle
+
+\section*{Replication and Project Proposal}
+\textbf{Can AI help professionals meet quality and time targets?}
+
+\textbf{Problem.}
+My work on AI assistants motivates a practical question: does access to
+generative AI increase the probability of producing work that meets both
+a quality benchmark and a time limit? This combines quality and speed
+into an outcome that is useful for evaluating a workflow.
+
+\textbf{Data and feasibility.}
+I will use Noy and Zhang's public
+\href{https://osf.io/xd7qw/}{experimental data}, already downloaded locally.
+Their study randomly assigned ChatGPT access between two professional
+writing tasks. The cleaned sample contains \HWTotalN{} participants; I will follow
+their main analysis by restricting to the \HWMainN{} participants with linear or
+convex incentives. The variables are assigned treatment, task time in
+minutes, mean overall grade on a 1--7 scale, occupation, task order, and
+incentive group. R descriptive statistics give a mean second-task time of
+\HWMeanPostTime{} minutes (\(n=\HWPostTimeN\)) and mean grade of \HWMeanPostGrade{} (\(n=\HWPostGradeN\)).
+Both second-task outcomes are observed for \HWPostCompleteN{} participants.
+
+\textbf{Replication.}
+I will reproduce the completion-time result in Figure 1A of
+Shakked Noy and Whitney Zhang (2023), \emph{Experimental evidence on the
+productivity effects of generative artificial intelligence},
+\textit{Science} 381(6654):187--192,
+\href{https://doi.org/10.1126/science.adh2586}{doi:10.1126/science.adh2586}.
+This will use changes between tasks and the authors' occupation-by-task-order
+and incentive controls, checking the sample and estimate against their code.
+
+\textbf{Original analysis.}
+I propose success as a second-task mean grade of at least 5/7 achieved in
+at most 20 minutes. These are my project benchmarks, not the study's
+official standards. I will compare success rates by randomized assignment,
+using a linear probability model with robust standard errors.
+Before calculating this new outcome, I specify sensitivity checks at
+15 and 25 minutes and grades 4 and 6, changing one threshold at a time.
+I will examine missing outcomes and the single zero-time report.
+This extends the separate average outcomes into a joint target; it does
+not directly measure present-day agents or my employers' workflows.
+
+\textbf{Reproducibility.}
+The repository contains the replication and project plans, source
+links, data preparation, R descriptive statistics, and instructions:
+\href{https://github.com/anishkganesh/stat5200-ai-quality-speed}{github.com/anishkganesh/stat5200-ai-quality-speed}.
+\end{document}
+
