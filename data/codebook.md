@@ -19,7 +19,7 @@ Blank CSV entries mean missing. A reported zero is retained as zero. In particul
 
 The source survey export has 786 rows. The authors' sequential restrictions leave: 539 after excluding unfinished surveys; 523 after excluding explicit nonconsent; 505 after retaining each participant's earliest response; 499 after manually flagged responses; 457 after submission-quality checks; and 453 after excluding participants who graded before completing the writing task. The resulting dataset contains unique participants.
 
-Grade preparation follows the July 21, 2023 source revision: exclude retry submissions, evaluators who previously completed the writing task, missing overall grades, and 23 evaluators whose own-score-on-other-score reliability slope is below 0.1. The last calculation reproduces the implementation in the authors' code. Repeated participant-evaluator-essay rows are retained as in that code. Remaining overall scores are averaged within participant and task. No bad-faith flag or missing score is silently turned into a zero grade.
+Grade preparation follows the July 21, 2023 source revision: exclude retry submissions, evaluators who previously completed the writing task, missing overall grades, and 23 evaluators whose own-score-on-other-score reliability slope is below 0.1. The last calculation reproduces the implementation in the authors' code. Repeated participant-evaluator-essay rows are retained as in that code. Remaining overall scores are averaged within participant and task.
 
 ## Main-sample availability
 
@@ -37,4 +37,17 @@ Grade preparation follows the July 21, 2023 source revision: exclude retry submi
 
 For the new post-task joint outcome, the observed sample is 186 control and 166 treatment. One control and six treatment participants lack a required post-task outcome. Availability counts are separate from sample exclusions; no additional participants are dropped from the 453-row stored dataset.
 
-The published grade regression uses participant-evaluator observations and additional fixed effects. These participant mean grades support descriptive summaries and the proposed course extension; they should not be substituted into a claim of exact replication of that grade regression.
+The published grade regression uses participant-evaluator observations and additional fixed effects. Participant mean grades support the descriptive summaries and proposed course extension. The planned replication instead targets the paper's completion-time result.
+
+
+# Source provenance
+
+The files in [sources/manifest.json](../sources/manifest.json) are pinned copies from the authors' public OSF node `xd7qw`, retrieved on October 29, 2026. Each entry records a relative destination, download URL, byte size, and SHA-256 digest.
+
+`fullsurvey.csv` supplies assignment, task order, occupation, incentives, and times. The two grading workbooks supply the authors' manual submission-quality flags. `grading_long_complete.csv` supplies evaluator scores and dates. The July 21 grade-cleaning revision and main survey-cleaning source identify the authors' exclusions; the main-figure source documents the intended replication model.
+
+The raw CSV uses non-UTF-8 text bytes; the preparation script reads it as Latin-1 and exports only selected numeric/categorical variables. Anonymized participant and grader hashes are used only internally for joins and are omitted from the tracked dataset.
+
+The authors' updated readme specifically directs users to `3 - grade cleaning_jul21.do`. Relevant supplementary-material locations: sample restrictions and models, printed page 7; grading instructions and examples, printed pages 49-52. The rubric asks evaluators to use the full 1-7 scale and place roughly as many grades below 4 as above 4. It does not assign a validated acceptance label to a score of 5.
+
+The scripts do not execute downloaded Stata or Python source code. Copyright and any reuse conditions for the original files remain with their authors and source repository. Raw data and third-party source copies are excluded from version control.
